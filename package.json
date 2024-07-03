@@ -1,7 +1,7 @@
 {
   "name": "frontend",
   "version": "0.1.0",
-  "homepage": "https://eng-AlaaMohamed.github.io/graduationproject",
+  "homepage": "https://eng-AlaaMohamed.github.io/Graduation-Project",
   "private": true,
   "dependencies": {
     "@react-email/components": "0.0.16",
