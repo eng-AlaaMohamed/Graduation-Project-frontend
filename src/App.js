@@ -34,7 +34,7 @@ function App() {
       <ToastContainer theme='colored' position='top-center' />
       <Header />
       <Routes>
-        <Route path='/graduationproject' element={<Home />} />
+        <Route path='/' element={<Home />} />
         <Route path='/addproject' element={<AddProject />} />
         <Route path='/browseprojects/projects/categories/:category' element={<Category />} />
         <Route path='/projects/categories/:category' element={<Category />} />
