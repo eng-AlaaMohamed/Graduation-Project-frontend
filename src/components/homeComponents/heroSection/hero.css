@@ -1,0 +1,124 @@
+.home .landing {
+    background-image: url('../../../images/hero-bg1.jpg');
+    background-size: cover;
+    object-fit: contain;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+.home .landing .overlay {
+    position: absolute;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    background-color: var(--overlay-color);
+}
+
+.home .landing-content {
+    color: white;
+    text-align: center;
+    z-index: 1;
+}
+
+.home .landing-content h1 {
+    margin-bottom: 10px;
+    font-size: 40px;
+}
+
+@media (max-width: 798px) {
+    .home .landing-content h1 {
+        font-size: 30px;
+    }
+}
+
+@media (max-width: 610px) {
+    .home .landing-content h1 {
+        font-size: 20px;
+    }
+}
+
+.home .landing-content p {
+    font-size: 18px;
+}
+
+@media (max-width: 798px) {
+    .home .landing-content p {
+        font-size: 16px;
+    }
+}
+
+@media (max-width: 610px) {
+    .home .landing-content p {
+        font-size: 14px;
+    }
+}
+
+.home .landing-content .button-content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 40px 0;
+}
+
+.home .landing-content .button-content a {
+    border: 1px solid #ccc;
+    padding: 10px 20px;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    display: block;
+    border-radius: var(--border-radius);
+    background-color: var(--main-color);
+    margin: 0 8px;
+}
+
+@media (max-width: 552px) {
+    .home .landing-content .button-content {
+        flex-direction: column;
+    }
+
+    .home .landing-content .button-content a {
+        width: 40% !important;
+        margin-bottom: 8px;
+    }
+}
+
+.home .landing-content .button-content a:hover {
+    background-color: var(--secondMain-color);
+}
+
+@media (max-width: 610px) {
+    .home .landing-content .button-content a {
+        font-size: 12px;
+    }
+}
+
+@media (max-width: 610px) {
+    .home .landing-content .button-content input::placeholder {
+        font-size: 12px;
+    }
+}
+
+@media (max-width: 798px) {
+    .home .landing-content .button-content input {
+        width: 70%;
+    }
+
+    .home .landing-content .button-content a {
+        width: 30%;
+    }
+}
+
+.home .arrow {
+    position: absolute;
+    bottom: 10px;
+    font-size: 35px;
+    animation: upTOdwon 2s linear infinite;
+}
+
+.home .arrow a {
+    color: white;
+}

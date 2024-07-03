@@ -1,0 +1,72 @@
+.project-sidebar{
+    flex: 3;
+}
+
+.project-sidebar .title{
+    border-bottom: 1px solid #ccc;
+    margin-bottom: 15px;
+    display: flex;
+}
+
+@media (max-width: 552px) {
+    .project-sidebar .title{
+        background-color: var(--main-color);
+        color: white;
+        padding: 10px 0;
+        border-radius: var(--border-radius);
+    }
+}
+
+.sidbar-links{
+    padding-left: 20px;
+    transition: 0.3s;
+}
+
+.sidbar-links.open{
+    height: 443px;
+}
+
+.icone{
+    display: none;
+    color: var(--main-color);
+    cursor: pointer;
+}
+
+.sidebar-link{
+    background-color: white;
+    display: block;
+    font-size: 17px;
+    cursor: pointer;
+    font-weight: 500;
+    color: var(--text-color);
+    position: relative;
+    padding: 20px;
+    text-align: center;
+    border-radius: 5px;
+}
+.sidebar-link:hover{
+    background-color: var(--secondMain-color);
+    color: white;
+}
+.sidebar-link:not(:last-child){
+    margin-bottom: 10px;
+}
+
+/* media Quairy */
+@media(max-width: 992px) {
+    .project-sidebar .title{
+        justify-content: center;
+        padding-bottom: 5px;
+        cursor: pointer;
+    }
+    .sidbar-links{
+        height: 0;
+        overflow: hidden;
+        border: none !important;
+        padding-left: 0px !important;
+    }
+    .icon{
+        display: block;
+        margin-right: 5px;
+    }
+}

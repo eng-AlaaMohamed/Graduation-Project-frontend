@@ -1,0 +1,30 @@
+.add-project{
+    background-color: var(--background-color);
+    padding: 55px 0 30px;
+}
+
+.add-project-page-title{
+    text-align: end;
+    padding: 60px 0 10px;
+    margin-bottom: 20px;
+    text-align: start;
+    border-bottom: 1px solid var(--border-color);
+}
+
+.forminfo-aboute-project{
+    display: flex;
+    padding: 0 0 20px;
+}
+
+@media(max-width: 870px) {
+    .forminfo-aboute-project{
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+@media(max-width: 552px) {
+    .add-project-page-title{
+        padding-top: 85px;
+    }
+}

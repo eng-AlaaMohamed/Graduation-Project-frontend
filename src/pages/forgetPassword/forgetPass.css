@@ -1,0 +1,64 @@
+.forget-password-page {
+    height: calc(100vh - 70px);
+    background-color: var(--background-color);
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+.forget-password-page .title {
+    margin-bottom: 40px;
+    border-bottom: 1px solid var(--border-color);
+    padding-bottom: 15px;
+}
+
+.forget-password-form {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+}
+
+.forget-password-form .form-label {
+    font-size: 16px;
+}
+
+.forget-password-form .form-input {
+    width: 500px;
+    padding: 15px 5px;
+    border: none;
+    border-radius: var(--border-radius);
+}
+
+.forget-password-form .form-input:focus {
+    border: 1px solid var(--main-color);
+}
+
+.forget-password-form .form-input::placeholder {
+    font-size: 14px;
+    transition: 0.3s;
+}
+
+.forget-password-form .form-input:focus::placeholder {
+    opacity: 0;
+}
+
+.forget-password-form .form-btn {
+    width: 100%;
+    margin-top: 20px;
+    background-color: var(--main-color);
+    color: white;
+    padding: 10px;
+    border: none;
+    border-radius: var(--border-radius);
+}
+
+.forget-password-form .form-btn:hover {
+    background-color: var(--secondMain-color);
+}
+
+@media (max-width: 552px) {
+    .forget-password-form .form-input {
+        width: 350px;
+    }
+}

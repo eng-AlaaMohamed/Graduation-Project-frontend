@@ -1,0 +1,205 @@
+.signUp-page {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: calc(100vh - 70px);
+    background-color: #eee;
+    padding: 95px 0 30px;
+}
+
+.signUp-page .signUp-content {
+    width: 80%;
+    display: flex;
+    box-shadow: 8px 11px 14px 0px #ccc;
+}
+
+.signUp-page .signUp-content .form {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    padding: 56px 20px;
+}
+
+.signUp-page .signUp-content .form .title {
+    text-align: center;
+    margin: 0 0 40px;
+}
+
+.signUp-page .signUp-content .form label {
+    margin: 0 0 10px;
+    font-weight: bold;
+}
+
+.signUp-page .signUp-content .form input {
+    padding: 15px;
+    margin: 0 0 20px;
+    border: none;
+    box-shadow: 8px 11px 14px 0px #ccc;
+    background-color: #e9e9e9;
+    width: 100%;
+}
+
+.signUp-page .signUp-content .form input::placeholder {
+    color: var(--text-color);
+    font-size: 12px;
+    transition: 0.2s;
+}
+
+.signUp-page .signUp-content .form input:focus {
+    border: 1px solid var(--main-color);
+}
+
+.signUp-page .signUp-content .form input:focus::placeholder {
+    opacity: 0;
+}
+
+.signUp-page .signUp-content .form button {
+    border: none;
+    padding: 10px;
+    border-radius: 6px;
+    background-color: var(--secondMain-color);
+    color: white;
+    width: 250px;
+    margin: 40px auto 0;
+}
+
+.signUp-page .signUp-content .text {
+    background-color: var(--main-color);
+    width: 50%;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.signUp-page .signUp-content .text h1 {
+    font-size: 50px;
+}
+
+.signUp-page .signUp-content .text a {
+    display: block;
+    border: none;
+    padding: 10px;
+    border-radius: 6px;
+    background-color: #e9e9e9;
+    width: 250px;
+    margin: 40px auto 0;
+    text-align: center;
+    color: black;
+    font-size: 18px;
+}
+
+.about-your-self textarea {
+    width: 100%;
+    min-height: 200px;
+    padding: 10px;
+    resize: none;
+    border: navajowhite;
+    box-shadow: 8px 11px 14px 0px #ccc;
+    background-color: #e9e9e9;
+    margin-bottom: 20px;
+}
+
+.about-your-self textarea::placeholder {
+    color: var(--text-color);
+    font-size: 12px;
+    transition: 0.2s;
+}
+
+.about-your-self textarea:focus {
+    border: 1px solid var(--main-color);
+}
+
+.about-your-self textarea:focus::placeholder {
+    opacity: 0;
+}
+
+.position-job .input-radio label {
+    position: relative;
+    padding-right: 25px;
+}
+
+.position-job .input-radio label::before {
+    position: absolute;
+    content: '';
+    width: 16px;
+    height: 16px;
+    border: 1px solid var(--main-color);
+    right: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: white;
+}
+
+input[type='radio'] {
+    display: none;
+}
+
+input[type='radio']:checked+label::after,
+input[type='radio']:not(:checked):hover+label::after {
+    position: absolute;
+    content: '';
+    width: 10px;
+    height: 10px;
+    background-color: var(--main-color);
+    right: 3px;
+    top: 7px;
+}
+
+input[type='radio']:not(:checked):hover+label::after {
+    opacity: 0.2;
+}
+
+input[type='radio']:checked+label {
+    color: var(--main-color);
+}
+
+.selsct-box {
+    margin-bottom: 15px;
+}
+
+.i-have-acc {
+    margin-top: 20px;
+    font-size: 15px;
+    display: none;
+}
+
+.i-have-acc>a {
+    margin-right: 5px;
+    color: var(--main-color);
+    border-bottom: 1px solid var(--main-color);
+    font-size: 14px;
+}
+
+
+/* media Quary */
+@media (max-width: 767px) {
+    .signUp-page .signUp-content {
+        flex-direction: column;
+    }
+
+    .signUp-page .signUp-content .form {
+        width: 100%;
+        padding: 20px;
+    }
+
+    .signUp-page .signUp-content .text {
+        display: none;
+    }
+
+    .i-have-acc {
+        display: block;
+    }
+}
+
+@media (max-width: 552px) {
+    .signUp-page {
+        padding: 85px 0 30px;
+    }
+
+    .signUp-page .signUp-content {
+        width: 95%;
+    }
+}

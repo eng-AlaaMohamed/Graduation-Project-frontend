@@ -1,0 +1,63 @@
+.create-project{
+    background-color: white;
+    width: 60%;
+    padding: 20px;
+    border-radius: var(--border-radius);
+}
+
+@media(max-width: 870px) {
+    .create-project{
+        width: 100%;
+        margin: 20px;
+    }
+}
+
+.create-project label{
+    margin-bottom: 10px;
+}
+
+.create-project input,
+.create-project textarea,
+.create-project select{
+    width: 100%;
+    height: 39px ;
+    border: 1px solid var(--border-color);
+    margin-bottom: 20px;
+    padding: 8px;
+}
+
+.create-project input::placeholder,
+.create-project textarea::placeholder{
+    font-size: 14px;
+    transition: 0.3s;
+}
+
+.create-project input:focus::placeholder,
+.create-project textarea:focus::placeholder{
+    opacity: 0;
+}
+
+.create-project select{
+    font-size: 14px;
+}
+
+.create-project input:focus,
+.create-project textarea:focus{
+    border-color: var(--secondMain-color);
+}
+
+.create-project textarea{
+    height: 180px;
+    resize: none;
+}
+
+.btn{
+    margin: 0 10px 0px 0;
+    padding: 8px 40px;
+    background-color: var(--main-color);
+    color: white;
+}
+.btn:hover{
+    background-color: var(--secondMain-color);
+    color: white;
+}

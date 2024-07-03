@@ -1,0 +1,35 @@
+.not-found{
+    width: 100%;
+    height: calc(100vh - var(--hight-footer-and-header));
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    background-color: var(--background-color);
+}
+
+.not-found-title{
+    font-size: 70px;
+    font-weight: bold;
+    color: red;
+}
+
+.not-found-text{
+    font-size: 30px;
+    color: var(--text-color);
+    margin-bottom: 30px;
+}
+
+.not-found-link{
+    display: block;
+    color: white;
+    background-color: var(--main-color);
+    border-radius: var(--border-radius);
+    font-size: 21px;
+    font-weight: 500;
+    padding: 5px 10px;
+}
+
+.not-found-link:hover{
+    background-color: var(--secondMain-color);
+}

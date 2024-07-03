@@ -1,0 +1,59 @@
+.portfolio-card{
+    text-align: center;
+    border-radius: var(--border-radius) ;
+    overflow: hidden;
+    border: 1px solid black;
+    position: relative;
+    padding: 10px;
+    transition: 0.3s;
+}
+
+.portfolio-card:hover{
+    background-color: var(--main-color);
+} 
+
+.portfolio-card-image{
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+    border-radius: var(--border-radius);
+}
+
+.portfolio-card .title{
+    font-size: 20px;
+    font-weight: 500;
+    padding: 10px;
+}
+
+.portfolio-card:hover .title{
+    color: white;
+} 
+
+.portfolio-card-btn{
+    background-color: black;
+    color: white;
+    padding: 5px 10px;
+    border-radius: var(--border-radius);
+    display: block;
+    width: 150px;
+    margin: auto;
+}
+
+.portfolio-card-icon{
+    margin: 10px 0 0;
+}
+
+.portfolio-card-icon .delete,
+.portfolio-card-icon .update{
+    font-size: 20px;
+    margin: 3px;
+    cursor: pointer;
+}
+
+.portfolio-card-icon .delete{
+    color: red;
+}
+
+.portfolio-card-icon .update{
+    color: rgb(30, 186, 30);
+}

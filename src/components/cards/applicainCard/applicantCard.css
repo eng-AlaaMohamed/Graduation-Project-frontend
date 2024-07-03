@@ -1,0 +1,85 @@
+.applicantCard-link{
+    display: block;
+    background-color: white;
+    border-radius: var(--border-radius);
+    margin-bottom: 20px;
+    padding: 20px;
+    border: 1px solid var(--border-color);
+    cursor: pointer;
+    transition: 0.3s;
+    position: relative;
+}
+
+.applicantCard-link:hover{
+    transform: translateY(-5px);
+    background-color: var(--main-color);
+    color: white ;
+}
+
+.applicantCard-link .header-card{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid var(--border-color);
+    color: var(--text-color);
+    padding-bottom: 10px;
+}
+.applicantCard-link:hover .header-card,
+.applicantCard-link:hover .description,
+.applicantCard-link:hover .username,
+.applicantCard-link:hover .job-title,
+.applicantCard-link:hover .job-title > span{
+    color: white;
+}
+
+.applicantCard-link .job-title{
+    font-weight: bold;
+    color: var(--secondMain-color);
+}
+
+.applicantCard-link .job-title > span{
+    color: orangered;
+}
+
+.applicantCard-link .pic-and-name{
+    display: flex;
+    align-items: center;
+}
+
+.applicantCard-link .username{
+    font-weight: bold;
+    color: var(--secondMain-color);
+}
+
+.applicantCard-link .user-image{
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    margin-left: 10px;
+}
+
+.applicantCard-link .description{
+    line-height: 1.8;
+    color: var(--text-color);
+    padding-top: 10px;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+}
+
+/* media quairy */
+@media(max-width: 552px) {
+    .applicantCard-link .header-card{
+        flex-direction: column;
+        padding: 0px;
+        align-items: start !important;
+    }
+    .applicantCard-link .job-title{
+        font-size: 13px;
+        margin-top: 10px;
+    }
+    .applicantCard-link .description{
+        margin: 0;
+    }
+}

@@ -1,0 +1,106 @@
+.project-item-page{
+    background-color: white;
+    padding: 20px;
+    border-radius: 5px;
+    margin-bottom: 20px;
+}
+
+.project-item-page .header-project{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid #ccc;
+    padding: 0 0 7px;
+}
+
+.header-project .user-info{
+    display: flex;
+    align-items: center;
+}
+
+.header-project .user-info .profile-photo-in-project{
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+}
+
+.project-item-page .header-project .user-info a {
+    color: black;
+    margin-right: 10px;
+}
+.project-item-page .user-info a:hover{
+    color: var(--secondMain-color);
+}
+
+.project-item-page .project-date{
+    color: var(--text-color);
+    font-size: 16px;
+}
+
+.project-item-page .project-info{
+    margin-top: 10px;
+}
+
+.project-title-and-category{
+    display: flex;
+    justify-content: space-between;
+}
+
+.project-title-and-category .title,
+.project-title-and-category .category {
+    font-weight: bold;
+}
+
+.project-title-and-category .title span{
+    color: var(--secondMain-color);
+}
+
+.project-title-and-category .category span {
+    color: orangered;
+}
+
+.project-item-page .project-description{
+    margin-top: 10px;
+    overflow: hidden;
+    color: var(--text-color);
+    line-height: 1.9;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+}
+
+.red-more-and-update-and-delete-project{
+    border-top:1px solid var(--border-color);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 10px;
+}
+
+
+.red-more-and-update-and-delete-project .icons .update{
+    color: green;
+    margin-left: 8px;
+    cursor: pointer;
+}
+
+.red-more-and-update-and-delete-project .icons .delete{
+    color: red;
+    cursor: pointer;
+}
+
+/* media quairy */
+@media (max-width: 552px){
+    .project-title-and-category{
+        flex-direction: column;
+    }
+    .project-title-and-category .title{
+        font-size: 15px;
+    }
+    .project-title-and-category .category {
+        font-size: 14px;
+    }
+    .project-item-page .project-description{
+        font-size: 13px;
+    }
+}

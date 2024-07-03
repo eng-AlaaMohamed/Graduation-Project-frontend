@@ -1,0 +1,36 @@
+.home .section-3 {
+    padding: 80px 20px;
+}
+
+.home .section-3 .title {
+    text-align: center;
+    color: var(--title-color);
+    margin: 0 0 80px;
+    font-size: 30px;
+}
+
+@media(max-width: 550px) {
+    .home .section-3 {
+        padding: 50px 0px;
+    }
+
+    .home .section-3 .title {
+        font-size: 25px;
+        margin: 0 0 50px;
+    }
+}
+
+.home .section-3 .section-content {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    grid-gap: 40px;
+}
+
+.home .section-3 .section-content .box h4 {
+    margin-bottom: 20px;
+}
+
+.home .section-3 .section-content .box p {
+    color: var(--text-color);
+    line-height: 2;
+}

@@ -1,0 +1,15 @@
+.box {
+    text-align: center;
+} 
+.box i{
+    font-size: 70px;
+    margin-bottom: 20px;
+}
+.box .text h4 {
+    margin-bottom: 20px;
+    color: var(--title-color);
+}
+.box .text p {
+    color: var(--text-color);
+    line-height: 2;
+}

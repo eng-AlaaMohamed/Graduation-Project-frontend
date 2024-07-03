@@ -1,0 +1,372 @@
+.user-profile{
+    background-color: var(--background-color);
+    padding: 95px 0 30px;
+    min-height: calc( 100vh - var(--hight-footer-and-header));
+}
+
+.user-profile-header{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    padding: 50px 0;
+    margin: 0 0 50px;
+    background-color: white;
+    border-radius: var( --border-radius);
+    text-align: center;
+}
+
+.user-image{
+    width: 120px;
+    height: 120px;
+    position: relative;
+    text-align: center;
+}
+
+.profile-image {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.upload-profile-photo,
+.upload-profile-photo-btn{
+    position: absolute;
+    margin: auto;
+    width: max-content;
+    cursor: pointer;
+    z-index: 10;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.upload-profile-photo{
+    bottom: 25px;
+    right: -3px;
+    padding: 8px 8px ;
+    border-radius: 50%;
+    background-color: var(--background-color);
+}
+
+.upload-profile-photo-btn{
+    right: -60px;
+    bottom: 18px;
+    border: none;
+    font-weight: bold;
+    font-size: 15px;
+    border-radius: 5px;
+    padding: 0px 5px;
+    background-color: var(--secondMain-color);
+    color: white;
+    width: 55px;
+}
+
+.profile-bio{
+    color: var(--text-color);
+}
+
+.user-data-joined span{
+    color: green;
+    font-size: 15px;
+}
+
+.update-profile-btn{
+    border: none;
+    padding: 5px 10px;
+    border-radius: 5px;
+    background-color: var(--secondMain-color);
+    color: white;
+    margin: 10px 0 0 0;
+}
+
+.update-profile-btn i{
+    margin-left: 5px;
+}
+
+.user-profile .profile-content {
+    display: flex;
+    gap: 20px;
+}
+
+.user-profile .profile-project-list{
+    min-width: 70%;
+    position: relative;
+}
+
+.profile-project-list-header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid var(--border-color);
+    padding-bottom: 10px;
+    margin-bottom: 20px;
+}
+
+.profile-project-list-header .project-list-tile{
+    font-size: 30px;
+}
+
+.profile-project-list-header .add-project-btn{
+    background-color: var(--main-color);
+    color: white;
+    padding: 5px;
+    border: none;
+    border-radius: var(--border-radius);
+    margin-left: 30px;
+}
+
+.profile-project-list-header .add-project-btn:hover{
+    background-color: var(--secondMain-color);
+}
+
+.profile-info{
+    min-width: 30%;
+}
+
+.user-profile .profile-content .profile-info .profile-info-title {
+    font-size: 30px;
+    padding-bottom: 10px;
+    margin-bottom: 20px;
+    display: block;
+    border-bottom: 1px solid var(--border-color);
+}
+
+.user-profile .profile-info .profile-info-content{
+    background-color: white;
+    padding: 20px;
+}
+
+.user-profile .profile-info .description-title{
+    border-bottom: 1px solid var(--border-color);
+    padding-bottom: 10px;
+    margin: 0;
+}
+
+.user-profile .profile-info .description{
+    color: var(--text-color);
+    background-color: var(--background-color);
+    padding: 10px;
+    line-height: 1.8;
+    border-radius: var(--border-radius);
+    margin: 10px 0 10px;
+}
+
+.user-profile .profile-info .our-project-count{
+    padding: 10px;
+    margin: 0;
+    background-color: var(--background-color);
+    border-radius: var(--border-radius);
+}
+
+.user-profile .profile-info .our-project-count > span {
+    background-color: var(--secondMain-color);
+    color: white;
+    padding: 0 10px;
+    margin-right: 10px;
+    border-radius: var(--border-radius);
+}
+
+.user-profile .contact-me .contact-me-title{
+    margin: 0;
+    padding: 0;
+}
+
+.user-profile .contact-me .icon-media{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 20px 0;
+    background-color: var(--main-color);
+    color: white;
+    padding: 10px 5px;
+    border-radius: var(--border-radius);
+    cursor: pointer;
+}
+
+.user-profile .contact-me .icon-media:hover{
+    background-color: var(--secondMain-color);
+}
+
+.user-profile .contact-me .email-icon{
+    font-size: 30px;
+    margin-right: 10px;
+}
+
+.user-profile .not-fount-project{
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    border-bottom: 1px solid var(--border-color);
+    font-size: 20px;
+    padding: 0 0 5px;
+}
+
+/* Form Create Project To Portfolio */
+.form-create-project-to-portfolio{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.8);
+    z-index: 1000;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.form-create-project-to-portfolio-content {
+    width: 800px;
+    background-color: var(--background-color);
+    padding: 20px;
+    border-radius: var(--border-radius);
+}
+
+@media(max-width: 552px) {
+    .form-create-project-to-portfolio-content {
+        width: 370px;
+    }   
+    .form-create-project-to-portfolio{
+        align-items:normal;
+    }
+}
+
+.form-create-project-to-portfolio-content .form-close{
+    color: red;
+    font-size: 25px;
+    position: fixed;
+    cursor: pointer;
+}
+
+.form-create-project-to-portfolio-content .form-close:hover{
+    color: rgb(133, 15, 15);
+}
+
+.form-create-project-to-portfolio-content .form-title{
+    text-align: center;
+    padding-bottom: 10px;
+    margin-bottom: 20px;
+    border-bottom: 1px solid var(--border-color);
+}
+
+.form-create-project-to-portfolio-content label{
+    font-weight: bold;
+    margin-bottom: 6px;
+    cursor: pointer;
+}
+
+.form-create-project-to-portfolio-content input,
+.form-create-project-to-portfolio-content textarea{
+    width: 100%;
+    border: none;
+    border-radius: var(--border-radius);
+    padding: 10px;
+    margin-bottom: 15px;
+}
+
+
+.form-create-project-to-portfolio-content input::placeholder,
+.form-create-project-to-portfolio-content textarea::placeholder{
+    font-size: 14px;
+    transition: 0.3s;
+}
+
+.form-create-project-to-portfolio-content input:focus::placeholder,
+.form-create-project-to-portfolio-content textarea:focus::placeholder{
+    opacity: 0;
+}
+
+.form-create-project-to-portfolio-content input:focus,
+.form-create-project-to-portfolio-content textarea:focus{
+    border: 1px solid var(--main-color);
+}
+
+.form-create-project-to-portfolio-content textarea {
+    resize: none;
+    min-height: 200px;
+}
+
+.form-create-project-to-portfolio-content .craete-upload-image{
+    background-color: white;
+}
+
+.form-create-project-to-portfolio-content .form-btn{
+    text-align: center;
+    width: 100%;
+    padding-top: 20px;
+    border-top: 1px solid var(--border-color);
+}
+
+.crerate-projecttoportfolio-btn{
+    padding: 10px 20px;
+    border: none;
+    border-radius: var(--border-radius);
+    color: white;
+    background-color: var(--main-color);
+    display: block;
+    margin: auto;
+    width: 300px;
+}
+
+.crerate-projecttoportfolio-btn:hover{
+    background-color: var(--secondMain-color);  
+}
+
+.go-to-login{
+    padding: 5px;
+    background-color: var(--main-color);
+    color: white;
+    margin-top: 10px;
+    border-radius: var(--border-radius);
+    text-align: center;
+    cursor: not-allowed;
+}
+
+/* Portfolio layout */
+.portfolio-layout {
+    padding: 20px;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 20px;
+    border: 1px solid var(--border-color);
+}
+
+.not-found-work{
+    margin: 0;
+    border-bottom: 1px solid var(--border-color);
+    width: fit-content;
+    font-size: 20px;
+}
+
+.delete-account{
+    margin-top: 25px;
+}
+
+.delete-account-btn{
+    padding: 5px 10px;
+    border-radius: var(--border-radius);
+    border: 1px solid red;
+    color: red; 
+    transition: 0.2s;
+    width: fit-content;
+    cursor: pointer;
+    margin-right: auto;
+}
+.delete-account-btn:hover{
+    background-color: red;
+    color: white;
+}
+
+/* media quairy */
+@media(max-width: 868px) {
+    .user-profile .profile-content {
+        flex-direction: column-reverse;
+    }
+}
+
+@media (max-width: 550px) {
+    .profile-project-list-header .add-project-btn{
+        margin-left: 0;
+    }
+}

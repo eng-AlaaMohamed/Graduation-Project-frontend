@@ -1,0 +1,33 @@
+.home .section-5 {
+    padding: 80px 20px;
+}
+.home .section-5 .title {
+    text-align: center;
+    color: var(--title-color);
+    margin: 0 0 80px;
+    font-size: 30px;
+}
+.accordion-button{
+    text-align: right;
+    padding: 25px 15px;
+}
+.accordion-button:not(.collapsed) {
+    background-color: transparent;
+}
+.accordion-button:focus{
+    box-shadow: none;
+}
+.accordion-button::after{
+    margin-right: auto !important;
+    margin-left: 0;
+}
+.accordion-body {
+    color: var(--text-color);
+    line-height: 2;
+}
+
+@media (max-width: 550px) {
+    .home .section-5 {
+        padding: 50px 0px;
+    }
+}

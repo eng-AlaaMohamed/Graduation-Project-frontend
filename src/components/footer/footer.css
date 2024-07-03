@@ -1,0 +1,35 @@
+.footer {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 10px;
+}
+.footer .payment {
+    text-align: center;
+}
+.footer .payment img {
+    width: 50px;
+    margin: 0 10px;
+}
+.footer p {
+    margin: 0;
+    color: var(--text-color);
+}
+.footer .arabic {
+    text-align: right;
+}
+
+/* Media Quary */
+@media (max-width: 562px) {
+    .footer .payment {
+        display: flex;
+    }
+    .footer .payment img {
+        width: 35px;
+        margin: 0 5px;
+    }
+    .footer .arabic,
+    .footer p {
+        font-size: 11px;
+    }
+}

@@ -1,0 +1,97 @@
+.header {
+    background-color: var(--main-color);
+    padding: 8px 0;
+    position: fixed;
+    width: 100%;
+    z-index: 1000;
+}
+
+.header-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header .header-content a {
+    color: white;
+}
+
+.header .header-content i {
+    font-size: 14px;
+    margin-left: 5px;
+}
+
+.header-left-user-info {
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+
+.header-left-username {
+    color: white;
+    font-size: 20px;
+}
+
+.header-left-user-photo {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    margin-right: 8px;
+    object-fit: cover;
+}
+
+.header-left-btn-logout {
+    padding: 5px 10px;
+    border: none;
+    font-size: 14px !important;
+    font-weight: bold;
+    border-radius: var(--border-radius);
+    background-color: var(--background-color);
+    color: black !important;
+    margin-right: 10px !important;
+}
+
+.header .header-content .header-right a {
+    font-size: 35px;
+    font-weight: bold;
+}
+
+/* Small */
+@media (min-width: 768px) {
+
+    .header .header-content .nav .nav-links a,
+    .header .header-content .header-left a {
+        margin: 0 5px;
+        font-size: 16px;
+    }
+}
+
+/* Medium */
+@media (min-width: 992px) {
+
+    .header .header-content .nav .nav-links a,
+    .header .header-content .header-left a {
+        margin: 0 10px;
+        font-size: 18px;
+    }
+}
+
+.header .header-content .menu i {
+    font-size: 35px;
+    color: white;
+    cursor: pointer;
+}
+
+@media(max-width: 870px) {
+
+    .header .nav,
+    .header .header-left {
+        display: none;
+    }
+}
+
+@media(min-width: 870px) {
+    .header .header-content .menu {
+        display: none;
+    }
+}

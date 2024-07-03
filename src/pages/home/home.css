@@ -1,0 +1,9 @@
+/* Start Animation For Landing ----------------------------------*/
+@keyframes upTOdwon {
+    0%,100% {
+        bottom: -5px;
+    }
+    50% {
+        bottom: 10px;
+    } 
+}

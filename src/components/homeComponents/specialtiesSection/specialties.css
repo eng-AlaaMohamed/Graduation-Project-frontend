@@ -1,0 +1,29 @@
+.section-4 {
+    padding: 80px 20px;
+    background-color: var(--background-color);
+}
+
+.section-4 .title {
+    text-align: center;
+    color: var(--title-color);
+    margin: 0 0 20px;
+    font-size: 30px;
+}
+
+.section-4 .tip {
+    color: var(--text-color);
+    text-align: center;
+    margin: 0 0 80px;
+}
+
+.section-4 .section-content {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    grid-gap: 40px;
+}
+
+@media (max-width: 550px) {
+    .section-4 {
+        padding: 50px 0px;
+    }
+}

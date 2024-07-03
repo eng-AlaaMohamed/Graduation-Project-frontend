@@ -1,0 +1,35 @@
+.project-sidebar{
+    flex: 3;
+}
+
+.project-sidebar .title{
+    border-bottom: 1px solid #ccc;
+    margin-bottom: 15px;
+}
+
+.sidebar-link{
+    background-color: white;
+    display: block;
+    font-size: 17px;
+    cursor: pointer;
+    font-weight: 500;
+    color: var(--text-color);
+    position: relative;
+    padding: 20px;
+    text-align: center;
+    border-radius: 5px;
+}
+.sidebar-link:hover{
+    background-color: var(--secondMain-color);
+    color: white;
+}
+.sidebar-link:not(:last-child){
+    margin-bottom: 10px;
+}
+
+/* media quiary */
+@media (max-width: 992px) {
+    .project-sidebar{
+        width: 100%;
+    }
+}

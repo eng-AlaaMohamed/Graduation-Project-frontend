@@ -1,0 +1,15 @@
+.box {
+    text-align: center;
+    transition: 0.3s;
+}
+.box img {
+    max-width: 75px;
+}
+.box p {
+    color: var(--text-color);
+    margin-top: 30px;
+    font-size: 20px;
+}
+.box:hover p{
+    color: var(--title-color);
+}

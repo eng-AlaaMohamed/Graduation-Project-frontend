@@ -1,0 +1,35 @@
+.free-lancers-page{
+    background-color: var(--background-color);
+    padding: 85px 0 0;
+    min-height: calc( 100vh - var(--hight-footer-and-header));
+}
+
+.free-lancers-page .title-page {
+    padding-bottom: 10px;
+    margin-bottom: 30px;
+    border-bottom: 1px solid var(--border-color);
+}
+
+.freelancer-layout{
+    display: flex;
+    gap: 20px;
+}
+
+.user-card{
+    flex: 9;
+    margin-top: 30px;
+}
+
+
+/* media quairy */
+@media(max-width: 992px) {
+    .freelancer-layout{
+        flex-direction: column;
+    }
+}
+
+@media(max-width: 552px) {
+    .user-card{
+        margin-top: 0;
+    }
+}

@@ -1,0 +1,104 @@
+.project-in-port-detalis{
+    background-color: var(--background-color);
+    min-height: calc( 100vh - var(--hight-footer-and-header));
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+    padding: 95px 0 30px;
+}
+
+.project-in-port-detalis-title{
+    border-bottom: 1px solid var(--border-color);
+    padding-bottom: 20px;
+    margin-bottom: 25px;
+}
+
+.project-in-port-detalis-content .title-and-image .image {
+    width: 700px;
+    margin: auto;
+}
+
+.project-in-port-detalis-content .title-and-image .image img{
+    width: 100%;
+}
+
+.update-portfolio-image{
+    margin-top: 0px;
+    width: fit-content;
+    margin-left: auto;
+}
+
+.update-portfolio-label{
+    background-color: var(--main-color);
+    color: white;
+    padding: 5px 10px;
+    border-bottom-left-radius: var(--border-radius);
+    cursor: pointer;
+    border-top: 1px solid var(--main-color);
+    border-left: 1px solid var(--main-color);
+    border-bottom: 1px solid var(--main-color);
+}
+
+.update-portfolio-label i{
+    margin-right: 5px;
+    font-size: 16px;
+}
+
+.update-portfolio-image button{
+    padding: 5px 10px;
+    border: none;
+    background-color: white;
+    border-bottom-right-radius: var(--border-radius);
+    border-top: 1px solid var(--main-color);
+    border-right: 1px solid var(--main-color);
+    border-bottom: 1px solid var(--main-color);
+}
+
+.project-in-port-detalis-content .title-and-image .title{
+    width: fit-content;
+    margin: 20px auto;
+    padding: 20px;
+    border-radius: var(--border-radius);
+    font-family: "Open Sans", sans-serif !important;
+}
+
+.project-in-port-detalis-content .description{
+    font-size: 25px;
+    line-height: 1.8;
+    border: 1px solid var(--border-color);
+    padding: 20px;
+    border-radius: var(--border-radius);
+    font-family: "Open Sans", sans-serif !important;
+}
+
+.project-in-port-detalis-content .project-link {
+    display: flex;
+    justify-content: center;
+}
+
+.project-in-port-detalis-content .project-link a{
+    display: block;
+    padding: 10px 20px;
+    background-color: var(--main-color);
+    color: white;
+    margin-top: 30px;
+    width: fit-content;
+}
+
+.project-in-port-detalis-content .project-link a:hover{
+    background-color: var(--secondMain-color);
+}
+
+.not-found-projectlink{
+    margin-top: 30px;
+    border-bottom: 1px solid var(--border-color);
+    padding-bottom: 5px;
+    font-size: 18px;
+}
+@media (max-width: 552px) {
+    .project-in-port-detalis-content .title-and-image .image {
+        width: 350px;
+    }
+}

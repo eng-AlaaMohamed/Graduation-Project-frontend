@@ -1,0 +1,107 @@
+:root {
+    --main-color: #0075ff;
+    --secondMain-color: #005cc9;
+    --overlay-color: #0000008f;
+    --text-color: #777;
+    --title-color: #2386c8;
+    --background-color: #eee;
+    --border-color: #ccc;
+    --border-radius : 5px ;
+    --hight-footer-and-header: 138px;
+}
+
+* {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'El Messiri', sans-serif ; 
+}
+
+body{
+    direction: rtl;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+.container {
+    padding-left: 15px;
+    padding-right: 15px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* Extra Small */
+@media (min-width: 576px) {
+    .container {
+        width: 750px;
+    }
+}
+
+/* Small */
+@media (min-width: 576px) {
+    .container {
+        width: 540px;
+    }
+}
+
+/* Medium */
+@media (min-width: 768px) {
+    .container {
+        width: 720px;
+    }
+}
+
+/* Large */
+@media (min-width: 992px) {
+    .container {
+        width: 960px;
+    }
+}
+
+/* Extra Large */
+@media (min-width: 1200px) {
+    .container {
+        width: 1140px;
+    }
+}
+
+a {
+    text-decoration: none !important;
+}
+
+ul {
+    list-style: none;
+    margin: 0 !important;
+    padding: 0 !important;
+}
+
+input:focus,
+select:focus,
+textarea:focus{
+    outline: none;
+}
+
+/* width */
+::-webkit-scrollbar {
+    width: 12px;
+  }
+  
+  /* Track */
+  ::-webkit-scrollbar-track {
+    background: #f1f1f1;
+  }
+  
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background: #888;
+    border-radius: 6px;
+  }
+  
+  /* Handle on hover */
+  ::-webkit-scrollbar-thumb:hover {
+    background: #555;
+  }

@@ -1,0 +1,204 @@
+.businessOwner-profile {
+    background-color: var(--background-color);
+    padding: 95px 0 30px;
+    min-height: calc(100vh - var(--hight-footer-and-header));
+}
+
+.businessOwner-profile-header {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    padding: 50px 0;
+    margin: 0 0 50px;
+    background-color: white;
+    border-radius: var(--border-radius);
+    text-align: center;
+}
+
+.businessOwner-image {
+    width: 120px;
+    height: 120px;
+    position: relative;
+    text-align: center;
+}
+
+.profile-image {
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.upload-profile-photo,
+.upload-profile-photo-btn {
+    position: absolute;
+    margin: auto;
+    width: max-content;
+    cursor: pointer;
+    z-index: 10;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.upload-profile-photo {
+    bottom: 25px;
+    right: -15px;
+    padding: 8px 8px;
+    border-radius: 50%;
+    background-color: var(--background-color);
+}
+
+.upload-profile-photo-btn {
+    right: -70px;
+    bottom: 13px;
+    border: none;
+    font-weight: bold;
+    font-size: 15px;
+    border-radius: 5px;
+    padding: 0px 5px;
+    background-color: var(--secondMain-color);
+    color: white;
+}
+
+.profile-bio {
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.businessOwner-data-joined span {
+    color: green;
+    font-size: 15px;
+}
+
+.update-profile-btn {
+    border: none;
+    padding: 5px 10px;
+    border-radius: 5px;
+    background-color: var(--secondMain-color);
+    color: white;
+    margin: 10px 0 0 0;
+}
+
+.update-profile-btn i {
+    margin-left: 5px;
+}
+
+
+.businessOwner-profile .profile-content .profile-info .profile-info-title {
+    font-size: 30px;
+    font-weight: bold;
+    padding-bottom: 10px;
+    border-bottom: 1px solid var(--border-color);
+    margin-bottom: 20px;
+    display: block;
+}
+
+.profile-project-list-title {
+    font-size: 30px;
+    font-weight: bold;
+    display: block;
+}
+
+.businessOwner-profile .profile-content {
+    display: flex;
+    gap: 20px;
+}
+
+.businessOwner-profile .profile-project-list {
+    min-width: 70%;
+    position: relative;
+}
+
+.profile-info {
+    min-width: 30%;
+}
+
+.businessOwner-profile .profile-info .profile-info-content {
+    background-color: white;
+    padding: 20px;
+}
+
+.businessOwner-profile .profile-info .description-title {
+    border-bottom: 1px solid var(--border-color);
+    padding-bottom: 10px;
+    margin: 0;
+}
+
+.businessOwner-profile .profile-info .description {
+    color: var(--text-color);
+    background-color: var(--background-color);
+    padding: 10px;
+    line-height: 1.8;
+    border-radius: var(--border-radius);
+    margin: 10px 0 10px;
+}
+
+.businessOwner-profile .profile-info .our-project-count {
+    padding: 10px;
+    margin: 0;
+    background-color: var(--background-color);
+    border-radius: var(--border-radius);
+}
+
+.businessOwner-profile .profile-info .our-project-count>span {
+    background-color: var(--secondMain-color);
+    color: white;
+    padding: 0 10px;
+    margin-right: 10px;
+    border-radius: var(--border-radius);
+}
+
+.businessOwner-profile .contact-me .contact-me-title {
+    margin: 0;
+    padding: 0;
+}
+
+.businessOwner-profile .contact-me .icon-media {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 20px 0;
+    background-color: var(--main-color);
+    color: white;
+    padding: 10px 5px;
+    border-radius: var(--border-radius);
+    cursor: pointer;
+}
+
+.businessOwner-profile .contact-me .icon-media:hover {
+    background-color: var(--secondMain-color);
+}
+
+.businessOwner-profile .contact-me .email-icon {
+    font-size: 30px;
+    margin-right: 10px;
+}
+
+
+.businessOwner-profile .not-fount-project {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    border-bottom: 1px solid var(--border-color);
+    font-size: 20px;
+    padding: 0 0 5px;
+}
+
+/* media quairy */
+@media(max-width: 868px) {
+    .businessOwner-profile .profile-content {
+        flex-direction: column-reverse;
+    }
+}
+
+@media (max-width: 550px) {
+    .businessOwner-profile {
+        padding: 85px 0 30px;
+    }
+    .profile-project-list-title,
+    .businessOwner-profile .profile-content .profile-info .profile-info-title {
+        font-size: 25px;
+    }
+}

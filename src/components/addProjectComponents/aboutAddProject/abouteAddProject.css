@@ -1,0 +1,26 @@
+.abouteAddProject{
+    width: 40%;
+    padding: 10px 40px 0 0;
+}
+
+@media(max-width: 870px) {
+    .abouteAddProject{
+        width: 100%;
+    }
+}
+
+.box-aboute{
+    margin-bottom: 40px;
+}
+
+.box-aboute .par,
+.box-aboute li{
+    font-size: 14px;
+    color: var(--text-color);
+    line-height: 2;
+}
+
+.box-aboute li {
+   list-style: disc;
+   margin: 0 30px 0 0;
+}

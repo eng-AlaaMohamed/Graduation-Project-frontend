@@ -1,0 +1,139 @@
+.signIn-page {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: calc(100vh - 70px);
+    background-color: #eee;
+    padding: 85px 0 0;
+}
+
+.signIn-page .signIn-content {
+    width: 80%;
+    display: flex;
+    box-shadow: 8px 11px 14px 0px #ccc;
+}
+
+.signIn-page .signIn-content .form {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    padding: 56px 20px;
+}
+
+.signIn-page .signIn-content .form .title {
+    text-align: center;
+    margin: 0 0 40px;
+}
+
+.signIn-page .signIn-content .form label {
+    margin: 0 0 10px;
+}
+
+.signIn-page .signIn-content .form input {
+    padding: 15px;
+    margin: 0 0 20px;
+    border: none;
+    box-shadow: 8px 11px 14px 0px #ccc;
+    background-color: #e9e9e9;
+}
+
+.signIn-page .signIn-content .form input::placeholder {
+    color: var(--text-color);
+    font-size: 12px;
+    transition: 0.2s;
+}
+
+.signIn-page .signIn-content .form input:focus {
+    border: 1px solid var(--main-color);
+}
+
+.signIn-page .signIn-content .form input:focus::placeholder {
+    opacity: 0;
+}
+
+.signIn-page .signIn-content .form button {
+    border: none;
+    padding: 10px;
+    border-radius: 6px;
+    background-color: var(--secondMain-color);
+    color: white;
+    width: 250px;
+    margin: 40px auto 0;
+}
+
+.signIn-page .signIn-content .text {
+    background-color: var(--main-color);
+    width: 50%;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.signIn-page .signIn-content .text h1 {
+    font-size: 50px;
+}
+
+.signIn-page .signIn-content .text a {
+    display: block;
+    border: none;
+    padding: 10px;
+    border-radius: 6px;
+    background-color: #e9e9e9;
+    width: 250px;
+    margin: 40px auto 0;
+    text-align: center;
+    color: black;
+    font-size: 18px;
+}
+
+.forget-password {
+    margin-top: 20px;
+    font-size: 15px;
+}
+
+.forget-password>a,
+.i-dont-have-acc>a {
+    margin-right: 5px;
+    color: var(--main-color);
+    border-bottom: 1px solid var(--main-color);
+    font-size: 14px;
+}
+
+.i-dont-have-acc {
+    margin-top: 8px;
+    font-size: 15px;
+    display: none;
+}
+
+
+/* media Quary */
+@media (max-width: 767px) {
+    .signIn-page .signIn-content {
+        flex-direction: column;
+    }
+
+    .signIn-page .signIn-content .form {
+        width: 100%;
+        padding: 20px;
+    }
+
+    .signIn-page .signIn-content .text {
+        display: none;
+    }
+
+    .i-dont-have-acc {
+        display: block;
+    }
+}
+
+@media (max-width: 552px) {
+    .signIn-page {
+        padding: 85px 0 0;
+    }
+    .signIn-page .signIn-content {
+        width: 95%;
+    }
+}

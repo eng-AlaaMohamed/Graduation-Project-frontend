@@ -1,0 +1,112 @@
+.project-detalis-page{
+    min-height: calc( 100vh - var(--hight-footer-and-header));
+    background-color: var(--background-color);
+}
+
+.project-details-content {
+    padding: 95px 0 30px;
+}
+
+.project-details-content .title-page {
+    text-align: center;
+    padding-bottom: 20px;
+    margin-bottom: 30px;
+    border-bottom: 1px solid var(--border-color);
+}
+
+.project-details-content .project-title,
+.project-details-content .category-project-detalis{
+    width: fit-content;
+    border-bottom: 1px solid var(--border-color);
+    font-weight: bold;
+    font-size: 20px;
+    padding: 5px 15px;
+    margin-bottom: 20px;
+    border-radius: var(--border-radius);
+    background-color: white;
+}
+
+.project-details-content .project-title span,
+.project-details-content .category-project-detalis span{
+    margin-right: 10px;
+    font-size: 18px;
+    color: var(--secondMain-color);
+}
+
+.project-details-content .project-description {
+    background-color: white;
+    padding: 20px;
+    line-height: 1.8;
+    border-radius: var(--border-radius);
+}
+
+.project-details-content .heder-project-detalis{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: white;
+    padding: 8px 20px;
+    border-radius: var(--border-radius);
+    margin-bottom: 20px;
+}
+
+.heder-project-detalis .user-info {
+    font-weight: bold;
+    font-size: 20px;
+    display: flex;
+    align-items: center;
+}
+
+.heder-project-detalis .user-info .username{
+    color: var(--secondMain-color);
+    font-size: 18px;
+}
+
+.heder-project-detalis .user-photo {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+.project-applicants-section {
+    padding: 20px;
+    margin-bottom: 20px;
+    border-top: 1px solid var(--border-color);
+    border-bottom: 1px solid var(--border-color);
+}
+
+.project-applicants-section .title-section {
+    background-color: white;
+    padding: 5px 15px;
+    border-radius: var(--border-radius);
+    margin:0 auto 10px auto;
+    width: fit-content;
+}
+
+.project-applicants-section .project-applicants {
+   padding: 20px; 
+}
+
+.project-detalis-page .not-found-applicants {
+    margin: auto;
+    color: red;
+    width: fit-content;
+    border-bottom: 1px solid var(--border-color);
+}
+
+
+.applicant-button {
+    display: block;
+    border: none;
+    padding: 10px 20px;
+    background-color: var(--main-color);
+    color: white;
+    border-radius: var(--border-radius);
+    margin: auto ;
+}
+
+.applicant-button:hover{
+    background-color: var(--secondMain-color);
+}
